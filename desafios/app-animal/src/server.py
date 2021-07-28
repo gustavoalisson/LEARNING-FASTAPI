@@ -42,7 +42,7 @@ def insere_animal(animal: Animal):
 # Retorna todos os animais cadastrados
 @app.get('/animais')
 def lista_todos_animais():
-    return {"Animais cadastrados": base_dados_memoria}
+    return base_dados_memoria
 
 # Retorna com o ID especificado
 @app.get('/animais/{id_animal}')
